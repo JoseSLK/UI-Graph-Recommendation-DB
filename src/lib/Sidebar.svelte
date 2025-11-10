@@ -5,6 +5,7 @@
   const menuItems = [
     { id: 'dashboard', label: 'Resumen', icon: '' },
     { id: 'registration', label: 'Inscripción', icon: '' },
+    { id: 'management', label: 'Gestión', icon: '' },
     { id: 'profile', label: 'Perfil', icon: '' }
   ];
 
