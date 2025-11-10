@@ -98,17 +98,6 @@
       </div>
 
       <div class="info-section">
-        <div class="info-card">
-          <div class="info-content">
-            <h4>¿Cómo funcionan las recomendaciones?</h4>
-            <p>
-              Las recomendaciones se generan usando algoritmos que analizan tu historial académico, 
-              cursos cursados, áreas de interés y patrones de otros estudiantes similares. 
-              El <strong>score</strong> indica la prioridad de la recomendación (mayor = más recomendado).
-            </p>
-          </div>
-        </div>
-
         <div class="legend-section">
           <h4 class="legend-title">Leyenda de Prioridades</h4>
           <div class="legend-items">
@@ -327,30 +316,6 @@
     margin-top: 32px;
   }
 
-  .info-card {
-    background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%);
-    border: 1px solid #bfdbfe;
-    border-radius: 12px;
-    padding: 20px;
-    display: flex;
-    gap: 16px;
-    align-items: flex-start;
-  }
-
-  .info-content h4 {
-    font-size: 16px;
-    font-weight: 600;
-    color: #1e40af;
-    margin: 0 0 8px 0;
-  }
-
-  .info-content p {
-    font-size: 14px;
-    color: #1e40af;
-    margin: 0;
-    line-height: 1.6;
-    opacity: 0.9;
-  }
 
   .legend-section {
     background: #ffffff;

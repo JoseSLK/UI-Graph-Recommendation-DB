@@ -2,6 +2,7 @@
   import Profile from './Profile.svelte';
   import StudentInfo from './StudentInfo.svelte';
   import CourseRegistration from './CourseRegistration.svelte';
+  import StudentManagement from './StudentManagement.svelte';
   
   export let currentPage = 'dashboard';
 
@@ -14,6 +15,10 @@
       title: 'Inscripción',
       content: 'Recomendaciones personalizadas de cursos basadas en tu perfil académico.'
     },
+    management: {
+      title: 'Gestión',
+      content: 'Gestiona cursos, intereses y semestre del estudiante.'
+    },
     profile: {
       title: 'Profile',
       content: 'Gestiona el ID de usuario para las peticiones de la aplicación.'
@@ -24,6 +29,7 @@
   $: isProfilePage = currentPage === 'profile';
   $: isDashboardPage = currentPage === 'dashboard';
   $: isRegistrationPage = currentPage === 'registration';
+  $: isManagementPage = currentPage === 'management';
 </script>
 
 <main class="main-content">
@@ -45,6 +51,12 @@
         <h2 class="content-title">{currentContent.title}</h2>
         <p class="content-text">{currentContent.content}</p>
         <CourseRegistration />
+      </div>
+    {:else if isManagementPage}
+      <div class="content-card">
+        <h2 class="content-title">{currentContent.title}</h2>
+        <p class="content-text">{currentContent.content}</p>
+        <StudentManagement />
       </div>
     {:else}
       <div class="content-card">

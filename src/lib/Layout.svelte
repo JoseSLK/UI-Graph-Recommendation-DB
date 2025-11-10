@@ -8,6 +8,7 @@
   const pageTitles = {
     dashboard: 'Dashboard',
     registration: 'Inscripción',
+    management: 'Gestión',
     analytics: 'Analytics',
     reports: 'Reports',
     settings: 'Settings',
